@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DC梦想家创意 - 首页</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 确保图片容器强制显示背景图 */
+        .card-img {
+            height: 160px;
+            background-color: #cce8dc;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+    </style>
 </head>
 <body>
 <header class="site-header">
@@ -22,132 +32,189 @@
     </div>
 </header>
 
-    <section class="hero-banner">
-        <div class="container">
-            <h1>发现全球原创创意项目</h1>
-            <p>艺术、设计、文创、手工、插画，汇聚所有梦想作品</p>
-            <button class="hero-btn">立即探索</button>
-        </div>
-    </section>
+<section class="hero-banner">
+    <div class="container">
+        <h1>发现全球原创创意项目</h1>
+        <p>艺术、设计、文创、手工、插画，汇聚所有梦想作品</p>
+        <button class="hero-btn">立即探索</button>
+    </div>
+</section>
 
-    <section class="category-header">
-        <div class="container">
-            <h2>热门分类</h2>
-            <div class="filter-bar">
-                <button class="filter-btn active">全部</button>
-                <button class="filter-btn">艺术</button>
-                <button class="filter-btn">设计</button>
-                <button class="filter-btn">文创周边</button>
-                <button class="filter-btn">书籍画册</button>
+<section class="category-header">
+    <div class="container">
+        <h2>热门分类</h2>
+        <div class="filter-bar">
+            <button class="filter-btn active">全部</button>
+            <button class="filter-btn">艺术</button>
+            <button class="filter-btn">设计</button>
+            <button class="filter-btn">文创周边</button>
+            <button class="filter-btn">书籍画册</button>
+        </div>
+    </div>
+</section>
+
+<main class="projects-grid container">
+    <!-- 原有2个 + 新增10个，共12个作品 -->
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544841899-3cb4344b83c0?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">热门推荐</span>
+            <h3>国风原创插画系列</h3>
+            <p>独立原创设计师</p>
+            <div class="fund-info">
+                <div class="funded">超高人气</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <main class="projects-grid container">
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?1);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <span class="label">热门推荐</span>
-                <h3>国风原创插画系列</h3>
-                <p>独立原创设计师</p>
-                <div class="fund-info">
-                    <div class="funded">超高人气</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518733057094-12709851057e?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">热门推荐</span>
+            <h3>创意文创周边设计</h3>
+            <p>创意工作室</p>
+            <div class="fund-info">
+                <div class="funded">超高人气</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?2);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <span class="label">热门推荐</span>
-                <h3>创意文创周边设计</h3>
-                <p>创意工作室</p>
-                <div class="fund-info">
-                    <div class="funded">超高人气</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1617042375876-74db62215948?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">艺术专区</span>
+            <h3>古风角色原画设计</h3>
+            <p>专业原画工作室</p>
+            <div class="fund-info">
+                <div class="funded">人气不错</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?3);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <h3>古风角色原画设计</h3>
-                <p>专业原画工作室</p>
-                <div class="fund-info">
-                    <div class="funded">人气不错</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">艺术专区</span>
+            <h3>现代插画作品集</h3>
+            <p>自由插画师</p>
+            <div class="fund-info">
+                <div class="funded">人气不错</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?4);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <h3>现代插画作品集</h3>
-                <p>自由插画师</p>
-                <div class="fund-info">
-                    <div class="funded">人气不错</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1578922794428-7559e1907361?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">热门推荐</span>
+            <h3>手绘装饰画定制</h3>
+            <p>手绘创作者</p>
+            <div class="fund-info">
+                <div class="funded">超高人气</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?5);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <span class="label">热门推荐</span>
-                <h3>手绘装饰画定制</h3>
-                <p>手绘创作者</p>
-                <div class="fund-info">
-                    <div class="funded">超高人气</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">文创专区</span>
+            <h3>文创手账本设计</h3>
+            <p>手工创意团队</p>
+            <div class="fund-info">
+                <div class="funded">人气不错</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?6);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <h3>文创手账本设计</h3>
-                <p>手工创意团队</p>
-                <div class="fund-info">
-                    <div class="funded">人气不错</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544247847-b6c1199159c5?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">艺术专区</span>
+            <h3>水彩风景插画</h3>
+            <p>艺术绘画师</p>
+            <div class="fund-info">
+                <div class="funded">人气不错</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?7);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <h3>水彩风景插画</h3>
-                <p>艺术绘画师</p>
-                <div class="fund-info">
-                    <div class="funded">人气不错</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1597223557502-923148919be4?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">设计专区</span>
+            <h3>卡通IP形象设计</h3>
+            <p>动漫设计工作室</p>
+            <div class="fund-info">
+                <div class="funded">超高人气</div>
+                <div class="days-left">进行中</div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="card-img" style="background-image:url(https://picsum.photos/400/250?8);background-size:cover;background-position:center;"></div>
-            <div class="card-content">
-                <span class="label">热门推荐</span>
-                <h3>卡通IP形象设计</h3>
-                <p>动漫设计工作室</p>
-                <div class="fund-info">
-                    <div class="funded">超高人气</div>
-                    <div class="days-left">进行中</div>
-                </div>
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1511422675223-d65d9f9d2c2f?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">设计专区</span>
+            <h3>国潮LOGO合集</h3>
+            <p>品牌设计师</p>
+            <div class="fund-info">
+                <div class="funded">人气飙升</div>
+                <div class="days-left">新品上线</div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1545232979-8bf68ee9b168?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">文创专区</span>
+            <h3>古风书签套装</h3>
+            <p>文创设计团队</p>
+            <div class="fund-info">
+                <div class="funded">人气飙升</div>
+                <div class="days-left">新品上线</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">书籍专区</span>
+            <h3>插画故事画册</h3>
+            <p>绘本创作师</p>
+            <div class="fund-info">
+                <div class="funded">人气不错</div>
+                <div class="days-left">进行中</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1551244072-5d12893278ab?w=400&h=250&auto=format')"></div>
+        <div class="card-content">
+            <span class="label">设计专区</span>
+            <h3>海报版式合集</h3>
+            <p>平面设计师</p>
+            <div class="fund-info">
+                <div class="funded">人气飙升</div>
+                <div class="days-left">新品上线</div>
+            </div>
+        </div>
+    </div>
+</main>
 
 <div class="footer">
     <div class="container">
-        <p>© 2025 DC梦想家创意版权所有</p>
+        <p>© 2025 DC梦想家创意 版权所有</p>
         <p>原创创意作品平台 · 专注艺术设计与文创创作</p>
     </div>
 </div>
