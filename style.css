@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+}
+.nav-menu a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+.user-actions a {
+    text-decoration: none;
+    color: #2ecc71;
+    font-weight: 500;
+}
+.hero-banner {
+    background: #2ecc71;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.hero-banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero-banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.hero-btn {
+    background: #fff;
+    color: #2ecc71;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.category-header {
+    padding: 40px 0;
+    background: #fff;
+}
+.category-header h1,
+.category-header h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.category-header p {
+    color: #777;
+    margin-bottom: 24px;
+}
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.filter-btn.active {
+    background: #2ecc71;
+    color: #fff;
+    border-color: #2ecc71;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 40px 0;
+}
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.card-img {
+    height: 160px;
+    background: #cce8dc;
+}
+.card-content {
+    padding: 16px;
+}
+.label {
+    display: inline-block;
+    background: #f0f9f4;
+    color: #2ecc71;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.card-content p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+}
+.fund-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.funded {
+    color: #2ecc71;
+    font-weight: 500;
+}
+.days-left {
+    color: #777;
+}
+
+.footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 35px 0;
+    margin-top: 60px;
+}
+.footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
