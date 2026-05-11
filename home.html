@@ -14,6 +14,64 @@
             background-size: cover !important;
             background-position: center !important;
         }
+        /* 新增搜索框样式 */
+        .search-bar {
+            padding: 20px 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .search-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .search-input {
+            width: 100%;
+            max-width: 800px;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+        .search-input:focus {
+            border-color: #2ecc71;
+        }
+        /* 全品类导航栏样式 */
+        .category-nav {
+            padding: 15px 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .category-list {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            list-style: none;
+        }
+        .category-list li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .category-list li a:hover {
+            color: #2ecc71;
+        }
+        /* 核心标语样式 */
+        .core-slogan {
+            padding: 40px 0;
+            text-align: center;
+            background: #f7f7f7;
+        }
+        .core-slogan h2 {
+            font-size: 32px;
+            color: #333;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -31,6 +89,40 @@
         </div>
     </div>
 </header>
+
+<!-- 新增：搜索框区域 -->
+<section class="search-bar">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="搜尋項目、發起人及類別">
+    </div>
+</section>
+
+<!-- 新增：全品类导航栏 -->
+<section class="category-nav">
+    <ul class="category-list">
+        <li><a href="#">藝術</a></li>
+        <li><a href="#">漫畫</a></li>
+        <li><a href="#">手工藝</a></li>
+        <li><a href="#">舞蹈</a></li>
+        <li><a href="#">設計</a></li>
+        <li><a href="#">時尚</a></li>
+        <li><a href="#">影片</a></li>
+        <li><a href="#">食品</a></li>
+        <li><a href="#">遊戲</a></li>
+        <li><a href="#">新聞</a></li>
+        <li><a href="#">音樂</a></li>
+        <li><a href="#">攝影</a></li>
+        <li><a href="#">出版</a></li>
+        <li><a href="#">科技</a></li>
+        <li><a href="#">劇院</a></li>
+        <li><a href="#">發現</a></li>
+    </ul>
+</section>
+
+<!-- 新增：核心标语 -->
+<section class="core-slogan">
+    <h2>將創意專案變為現實。</h2>
+</section>
 
 <section class="hero-banner">
     <div class="container">
@@ -54,7 +146,7 @@
 </section>
 
 <main class="projects-grid container">
-    <!-- 原有2个 + 新增10个，共12个作品 -->
+    <!-- 12个作品卡片（保留原有内容） -->
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544841899-3cb4344b83c0?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -67,7 +159,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518733057094-12709851057e?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -80,7 +171,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1617042375876-74db62215948?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -93,7 +183,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -106,7 +195,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1578922794428-7559e1907361?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -119,7 +207,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -132,7 +219,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544247847-b6c1199159c5?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -145,7 +231,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1597223557502-923148919be4?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -158,7 +243,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1511422675223-d65d9f9d2c2f?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -171,7 +255,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1545232979-8bf68ee9b168?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -184,7 +267,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=250&auto=format')"></div>
         <div class="card-content">
@@ -197,7 +279,6 @@
             </div>
         </div>
     </div>
-
     <div class="project-card">
         <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1551244072-5d12893278ab?w=400&h=250&auto=format')"></div>
         <div class="card-content">
